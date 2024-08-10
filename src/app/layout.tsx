@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import  store  from '../store/store';
 import '../styles/globals.css';
 
+
 interface RootLayoutProps {
   children: React.ReactNode;
 }
