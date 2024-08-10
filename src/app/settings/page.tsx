@@ -4,6 +4,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 
+
 import {
   setShowBarChart,
   setShowLineChart,
@@ -13,10 +14,10 @@ import {
   setShowPieChart,
 } from "../../store/settingSlice";
 import { RootState } from "../../store/store";
-import styles from "./Settings.module.css"; // Import the CSS module
+import styles from "./Settings.module.css"; 
 import Select from "react-select";
 import { FaChartBar, FaChartLine, FaTable, FaLayerGroup, FaFilter, FaChartPie } from "react-icons/fa";
-import { MdRadar } from "react-icons/md"; // Importing a radar chart icon
+import { MdRadar } from "react-icons/md"; 
 
 interface SettingsProps {
   dataFilter: string[];
@@ -68,12 +69,12 @@ const Settings: React.FC<SettingsProps> = ({ dataFilter, handleDataFilterChange 
   const customStyles = {
     menu: (provided: any) => ({
       ...provided,
-      color: "#333", // Change the text color of the dropdown menu
+      color: "#333",
     }),
     option: (provided: any, state: any) => ({
       ...provided,
-      color: state.isSelected ? "#fff" : "#333", // Change the text color of the options
-      backgroundColor: state.isSelected ? "#007bff" : "#fff", // Change background color on selection
+      color: state.isSelected ? "#fff" : "#333", 
+      backgroundColor: state.isSelected ? "#007bff" : "#fff", 
     }),
   };
 
