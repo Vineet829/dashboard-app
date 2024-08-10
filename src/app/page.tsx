@@ -12,6 +12,7 @@ const HomePage: React.FC = () => {
         Visualize data, make informed decisions.
 
 
+      
         </p>
       </header>
       <Link href="/dashboard" passHref>
