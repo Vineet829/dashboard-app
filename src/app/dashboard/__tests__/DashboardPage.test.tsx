@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import store from '../../../store/store';
 import Dashboard from '../page';
 
+
 describe('Dashboard Component', () => {
   test('renders Dashboard component with correct elements', () => {
     render(
