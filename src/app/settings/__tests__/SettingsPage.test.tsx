@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import store from '../../../store/store';
 import Settings from '../page';
 
+
 describe('Settings Component', () => {
   test('renders Settings component', () => {
     render(
