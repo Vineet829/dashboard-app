@@ -1,0 +1,87 @@
+.data-table-container {
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 400px;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #1e1e1e;
+  height: 14rem;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.data-table-caption {
+  caption-side: top;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #d4d4d4;
+}
+
+.data-table-header {
+  background-color: #2e2e2e;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid #3e3e3e;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  position: relative;
+}
+
+.data-table-header:hover {
+  background-color: #3e3e3e;
+  color: #ffffff;
+}
+
+.data-table-header .sort-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8em;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.data-table-header:hover .sort-icon {
+  opacity: 1;
+}
+
+.data-table-cell {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #3e3e3e;
+  transition: background-color 0.3s;
+  color: #d4d4d4;
+}
+
+.data-table-cell:hover {
+  background-color: #3e3e3e;
+}
+
+.data-table tr:nth-child(even) .data-table-cell {
+  background-color: #2e2e2e;
+}
+
+.data-table tr:last-child .data-table-cell {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .data-table-container {
+    padding: 5px;
+  }
+
+  .data-table-header,
+  .data-table-cell {
+    padding: 8px;
+  }
+}

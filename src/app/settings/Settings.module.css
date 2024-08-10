@@ -1,0 +1,139 @@
+.settings {
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 30px;
+  overflow-y: auto;
+  width: 17rem;
+}
+
+.settings h2 {
+  margin-bottom: 20px;
+  font-size: 1.6em;
+  color: #d4d4d4;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  min-width: 13rem;
+}
+
+.widgetVisibility {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 30px;
+}
+
+.widgetVisibility,
+.themeSelector,
+.fontSizeSelector,
+.languageSelector,
+.categoryFilter,
+.subcategoryFilter,
+.dateRangeFilter,
+.dataFilterSelector {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Fira Code', 'Courier New', monospace;
+}
+
+.widgetVisibility label,
+.themeSelector label,
+.fontSizeSelector label,
+.languageSelector label,
+.categoryFilter label,
+.subcategoryFilter label,
+.dateRangeFilter label,
+.dataFilterSelector label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 1em;
+  color: #d4d4d4;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.widgetVisibility input,
+.themeSelector select,
+.fontSizeSelector select,
+.languageSelector select,
+.categoryFilter select,
+.subcategoryFilter select,
+.dateRangeFilter input,
+.dataFilterSelector select {
+  padding: 10px;
+  border: 1px solid #3c3c3c;
+  border-radius: 6px;
+  font-size: 1em;
+  color: #d4d4d4;
+  background-color: #252526;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Fira Code', 'Courier New', monospace;
+}
+
+.widgetVisibility input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+.widgetVisibility input[type="checkbox"] + label {
+  display: inline-block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: #d4d4d4;
+  cursor: pointer;
+}
+
+.themeSelector select:focus,
+.fontSizeSelector select:focus,
+.languageSelector select:focus,
+.categoryFilter select:focus,
+.subcategoryFilter select:focus,
+.dateRangeFilter input:focus,
+.dataFilterSelector select:focus {
+  border-color: #007acc;
+  box-shadow: 0 0 8px rgba(0, 122, 204, 0.3);
+}
+
+.widgetVisibility label:hover,
+.themeSelector label:hover,
+.fontSizeSelector label:hover,
+.languageSelector label:hover,
+.categoryFilter label:hover,
+.subcategoryFilter label:hover,
+.dateRangeFilter label:hover,
+.dataFilterSelector label:hover {
+  color: #007acc;
+  cursor: pointer;
+}
+
+.settings,
+.widgetVisibility,
+.themeSelector,
+.fontSizeSelector,
+.languageSelector,
+.categoryFilter,
+.subcategoryFilter,
+.dateRangeFilter,
+.dataFilterSelector {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
