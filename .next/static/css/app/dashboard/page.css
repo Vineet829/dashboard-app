@@ -1,0 +1,341 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/tables/DataTable.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+.DataTable_data-table-container__mDmla {
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 400px;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #1e1e1e;
+  height: 14rem;
+}
+
+
+.DataTable_data-table__FeoCs {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.DataTable_data-table-caption__PPK4a {
+  caption-side: top;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #d4d4d4;
+}
+
+.DataTable_data-table-header__qTaEu {
+  background-color: #2e2e2e;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid #3e3e3e;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  position: relative;
+}
+
+.DataTable_data-table-header__qTaEu:hover {
+  background-color: #3e3e3e;
+  color: #ffffff;
+}
+
+.DataTable_data-table-header__qTaEu .DataTable_sort-icon__9XP6K {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8em;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.DataTable_data-table-header__qTaEu:hover .DataTable_sort-icon__9XP6K {
+  opacity: 1;
+}
+
+.DataTable_data-table-cell__lL0Du {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #3e3e3e;
+  transition: background-color 0.3s;
+  color: #d4d4d4;
+}
+
+.DataTable_data-table-cell__lL0Du:hover {
+  background-color: #3e3e3e;
+}
+
+.DataTable_data-table__FeoCs tr:nth-child(even) .DataTable_data-table-cell__lL0Du {
+  background-color: #2e2e2e;
+}
+
+.DataTable_data-table__FeoCs tr:last-child .DataTable_data-table-cell__lL0Du {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .DataTable_data-table-container__mDmla {
+    padding: 5px;
+  }
+
+  .DataTable_data-table-header__qTaEu,
+  .DataTable_data-table-cell__lL0Du {
+    padding: 8px;
+  }
+}
+
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/dashboard/Dashboard.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+.Dashboard_dashboardContainer__KtRxz {
+  display: flex;
+  height: 100vh;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+}
+
+.Dashboard_mainContent__Ex55j {
+  flex-grow: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background-color: #252526;
+  color: #d4d4d4;
+}
+
+.Dashboard_header__tQgDm {
+  margin-top: -40px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Consolas', 'Courier New', monospace;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.Dashboard_widgetsContainer__3GsPc {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 1rem;
+  gap: 1rem;
+  height: 100vh;
+}
+
+.Dashboard_widget__hB0Og {
+  background-color: #3c3c3c;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #2d2d2d;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+  font-family: 'Consolas', 'Courier New', monospace;
+  color: #d4d4d4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 28rem;
+  max-height: 22rem;
+}
+
+.Dashboard_widget__hB0Og:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #2a2d2e;
+  border-color: #1e1e1e;
+}
+
+.Dashboard_widgetChart__7Pt3z {
+  margin-top: 1rem;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .Dashboard_dashboardContainer__KtRxz {
+    flex-direction: column;
+    height: auto;
+    padding: 0.5rem;
+  }
+
+  .Dashboard_mainContent__Ex55j {
+    padding: 0.5rem;
+  }
+
+  .Dashboard_header__tQgDm {
+    font-size: 1.25rem;
+    margin-top: 0;
+    padding: 0.5rem;
+  }
+
+  .Dashboard_widgetsContainer__3GsPc {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1rem; /* Increased gap for better spacing */
+    padding: 1rem; /* Increased padding for a larger container */
+    max-width: 100%; /* Ensure the container takes full width */
+    overflow-y: auto; /* Make the container scrollable if content overflows */
+    height: calc(100vh - 2rem); /* Adjust height to account for padding */
+  }
+
+  .Dashboard_widget__hB0Og {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0.5rem; /* Slightly increased padding for better readability */
+    transform: scaleY(0.7); /* Scale down the widget size on the Y-axis */
+  }
+
+  .Dashboard_widgetChart__7Pt3z {
+    height: 300px; /* Reduce the height of the chart for mobile screens */
+  }
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/settings/Settings.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+.Settings_settings__BTM6_ {
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 30px;
+  overflow-y: auto;
+  width: 17rem;
+}
+
+
+.Settings_settings__BTM6_ h2 {
+  margin-bottom: 20px;
+  font-size: 1.6em;
+  color: #d4d4d4;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  min-width: 13rem;
+}
+
+.Settings_widgetVisibility__GKWXM {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 30px;
+}
+
+.Settings_widgetVisibility__GKWXM,
+.Settings_themeSelector__TI_zC,
+.Settings_fontSizeSelector__99ff2,
+.Settings_languageSelector__Bjg_0,
+.Settings_categoryFilter__JhYcw,
+.Settings_subcategoryFilter__GnUR8,
+.Settings_dateRangeFilter__NCvzJ,
+.Settings_dataFilterSelector__VCEB3 {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Fira Code', 'Courier New', monospace;
+}
+
+.Settings_widgetVisibility__GKWXM label,
+.Settings_themeSelector__TI_zC label,
+.Settings_fontSizeSelector__99ff2 label,
+.Settings_languageSelector__Bjg_0 label,
+.Settings_categoryFilter__JhYcw label,
+.Settings_subcategoryFilter__GnUR8 label,
+.Settings_dateRangeFilter__NCvzJ label,
+.Settings_dataFilterSelector__VCEB3 label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 1em;
+  color: #d4d4d4;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.Settings_widgetVisibility__GKWXM input,
+.Settings_themeSelector__TI_zC select,
+.Settings_fontSizeSelector__99ff2 select,
+.Settings_languageSelector__Bjg_0 select,
+.Settings_categoryFilter__JhYcw select,
+.Settings_subcategoryFilter__GnUR8 select,
+.Settings_dateRangeFilter__NCvzJ input,
+.Settings_dataFilterSelector__VCEB3 select {
+  padding: 10px;
+  border: 1px solid #3c3c3c;
+  border-radius: 6px;
+  font-size: 1em;
+  color: #d4d4d4;
+  background-color: #252526;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Fira Code', 'Courier New', monospace;
+}
+
+.Settings_widgetVisibility__GKWXM input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+.Settings_widgetVisibility__GKWXM input[type="checkbox"] + label {
+  display: inline-block;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: #d4d4d4;
+  cursor: pointer;
+}
+
+.Settings_themeSelector__TI_zC select:focus,
+.Settings_fontSizeSelector__99ff2 select:focus,
+.Settings_languageSelector__Bjg_0 select:focus,
+.Settings_categoryFilter__JhYcw select:focus,
+.Settings_subcategoryFilter__GnUR8 select:focus,
+.Settings_dateRangeFilter__NCvzJ input:focus,
+.Settings_dataFilterSelector__VCEB3 select:focus {
+  border-color: #007acc;
+  box-shadow: 0 0 8px rgba(0, 122, 204, 0.3);
+}
+
+.Settings_widgetVisibility__GKWXM label:hover,
+.Settings_themeSelector__TI_zC label:hover,
+.Settings_fontSizeSelector__99ff2 label:hover,
+.Settings_languageSelector__Bjg_0 label:hover,
+.Settings_categoryFilter__JhYcw label:hover,
+.Settings_subcategoryFilter__GnUR8 label:hover,
+.Settings_dateRangeFilter__NCvzJ label:hover,
+.Settings_dataFilterSelector__VCEB3 label:hover {
+  color: #007acc;
+  cursor: pointer;
+}
+
+.Settings_settings__BTM6_,
+.Settings_widgetVisibility__GKWXM,
+.Settings_themeSelector__TI_zC,
+.Settings_fontSizeSelector__99ff2,
+.Settings_languageSelector__Bjg_0,
+.Settings_categoryFilter__JhYcw,
+.Settings_subcategoryFilter__GnUR8,
+.Settings_dateRangeFilter__NCvzJ,
+.Settings_dataFilterSelector__VCEB3 {
+  animation: Settings_fadeIn__2KcNj 0.3s ease-in-out;
+}
+
+@keyframes Settings_fadeIn__2KcNj {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
