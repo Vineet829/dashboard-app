@@ -7,6 +7,7 @@ interface WidgetProps {
   children: React.ReactNode;
 }
 
+
 const Widget: React.FC<WidgetProps> = ({ title, children }) => {
   return (
     <div className="widget">
