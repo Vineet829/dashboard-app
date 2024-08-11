@@ -18,6 +18,7 @@ const initialState: SettingsState = {
   showPieChart: true,
 };
 
+
 const settingSlice = createSlice({
   name: 'settings',
   initialState,
