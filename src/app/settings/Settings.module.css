@@ -22,7 +22,7 @@
   font-family: 'Fira Code', 'Courier New', monospace;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   min-width: 13rem;
 }
 

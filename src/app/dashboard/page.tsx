@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState, useEffect } from "react";
 import {
   BarChart,
@@ -28,19 +29,14 @@ import DataTable from "../../components/tables/DataTable";
 import styles from "./Dashboard.module.css";
 import Settings from "../settings/page";
 import { DataItem } from "../../types/data";
+
 import Link from 'next/link';
 
-interface DashboardProps {
-  handleDataFilterChange?: (selectedOptions: any) => void;
-}
-
-const Dashboard: React.FC<DashboardProps> = ({ handleDataFilterChange }) => {
+const Dashboard: React.FC<any> = ({ handleDataFilterChange }) => {
   const [data, setData] = useState<DataItem[]>([]);
   const [filteredData, setFilteredData] = useState<DataItem[]>([]);
   const [dataFilter, setDataFilter] = useState<string[]>([]);
 
-  
-  
   const dispatch = useDispatch();
   const showBarChart = useSelector((state: RootState) => state.settings.showBarChart);
   const showLineChart = useSelector((state: RootState) => state.settings.showLineChart);
@@ -230,11 +226,10 @@ const Dashboard: React.FC<DashboardProps> = ({ handleDataFilterChange }) => {
           )}
         </div>
       </main>
-      <aside className={styles.settings}>
-        <Settings dataFilter={dataFilter} handleDataFilterChange={handleFilterChange} />
-      </aside>
+      <Settings dataFilter={dataFilter} handleDataFilterChange={handleFilterChange} />
     </div>
   );
 };
 
 export default Dashboard;
+

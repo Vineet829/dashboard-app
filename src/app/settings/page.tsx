@@ -1,10 +1,7 @@
 "use client";
 
-
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-
-
 import {
   setShowBarChart,
   setShowLineChart,
@@ -14,17 +11,12 @@ import {
   setShowPieChart,
 } from "../../store/settingSlice";
 import { RootState } from "../../store/store";
-import styles from "./Settings.module.css"; 
+import styles from "./Settings.module.css";
 import Select from "react-select";
 import { FaChartBar, FaChartLine, FaTable, FaLayerGroup, FaFilter, FaChartPie } from "react-icons/fa";
-import { MdRadar } from "react-icons/md"; 
+import { MdRadar } from "react-icons/md";
 
-interface SettingsProps {
-  dataFilter: string[];
-  handleDataFilterChange: (selectedOptions: any) => void;
-}
-
-const Settings: React.FC<SettingsProps> = ({ dataFilter, handleDataFilterChange }) => {
+const Settings: React.FC<any> = ({ dataFilter, handleDataFilterChange }) => {
   const dispatch = useDispatch();
   const showBarChart = useSelector((state: RootState) => state.settings.showBarChart);
   const showLineChart = useSelector((state: RootState) => state.settings.showLineChart);
@@ -73,8 +65,8 @@ const Settings: React.FC<SettingsProps> = ({ dataFilter, handleDataFilterChange 
     }),
     option: (provided: any, state: any) => ({
       ...provided,
-      color: state.isSelected ? "#fff" : "#333", 
-      backgroundColor: state.isSelected ? "#007bff" : "#fff", 
+      color: state.isSelected ? "#fff" : "#333",
+      backgroundColor: state.isSelected ? "#007bff" : "#fff",
     }),
   };
 
@@ -155,7 +147,7 @@ const Settings: React.FC<SettingsProps> = ({ dataFilter, handleDataFilterChange 
           id="dataFilter"
           isMulti
           options={filterOptions}
-          value={filterOptions.filter((option) => dataFilter.includes(option.value))}
+          value={Array.isArray(dataFilter) ? filterOptions.filter((option) => dataFilter.includes(option.value)) : []}
           onChange={handleDataFilterChange}
           styles={customStyles}
           aria-label="Select Data Filter"

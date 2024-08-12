@@ -10,36 +10,41 @@ interface DataTableProps {
   className?: string;
 }
 
-
 const DataTable: React.FC<DataTableProps> = ({ data, caption, className }) => {
-  const [sortConfig, setSortConfig] = useState<{ key: string; direction: 'ascending' | 'descending' } | null>(null);
+  const [sortConfig, setSortConfig] = useState<{
+    key: string;
+    direction: 'ascending' | 'descending';
+  } | null>(null);
 
   const sortedData = useMemo(() => {
-    let sortableData = [...data.rows];
+    const sortableData = [...data.rows];
+
     if (sortConfig !== null) {
       sortableData.sort((a, b) => {
-        if (a[data.headers.indexOf(sortConfig.key)] < b[data.headers.indexOf(sortConfig.key)]) {
+        const aIndex = data.headers.indexOf(sortConfig.key);
+        const bIndex = data.headers.indexOf(sortConfig.key);
+
+        if (a[aIndex] < b[bIndex]) {
           return sortConfig.direction === 'ascending' ? -1 : 1;
         }
-        if (a[data.headers.indexOf(sortConfig.key)] > b[data.headers.indexOf(sortConfig.key)]) {
+        if (a[aIndex] > b[bIndex]) {
           return sortConfig.direction === 'ascending' ? 1 : -1;
         }
         return 0;
       });
     }
-    return sortableData;
-  }, [data.rows, sortConfig]);
 
-  const requestSort = (key: string) => {
+    return sortableData;
+  }, [data.rows, data.headers, sortConfig]);
+
+  const requestSort = (header: string) => {
     let direction: 'ascending' | 'descending' = 'ascending';
-    if (
-      sortConfig &&
-      sortConfig.key === key &&
-      sortConfig.direction === 'ascending'
-    ) {
+
+    if (sortConfig && sortConfig.key === header && sortConfig.direction === 'ascending') {
       direction = 'descending';
     }
-    setSortConfig({ key, direction });
+
+    setSortConfig({ key: header, direction });
   };
 
   return (
