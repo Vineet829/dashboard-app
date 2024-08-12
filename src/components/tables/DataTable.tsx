@@ -10,6 +10,7 @@ interface DataTableProps {
   className?: string;
 }
 
+
 const DataTable: React.FC<DataTableProps> = ({ data, caption, className }) => {
   const [sortConfig, setSortConfig] = useState<{
     key: string;
