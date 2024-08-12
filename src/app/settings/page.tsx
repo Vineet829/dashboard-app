@@ -12,6 +12,7 @@ import {
 } from "../../store/settingSlice";
 import { RootState } from "../../store/store";
 import styles from "./Settings.module.css";
+
 import Select from "react-select";
 import { FaChartBar, FaChartLine, FaTable, FaLayerGroup, FaFilter, FaChartPie } from "react-icons/fa";
 import { MdRadar } from "react-icons/md";
