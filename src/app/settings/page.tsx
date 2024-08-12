@@ -17,6 +17,7 @@ import Select from "react-select";
 import { FaChartBar, FaChartLine, FaTable, FaLayerGroup, FaFilter, FaChartPie } from "react-icons/fa";
 import { MdRadar } from "react-icons/md";
 
+
 const Settings: React.FC<any> = ({ dataFilter, handleDataFilterChange }) => {
   const dispatch = useDispatch();
   const showBarChart = useSelector((state: RootState) => state.settings.showBarChart);
